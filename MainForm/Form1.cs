@@ -1,4 +1,4 @@
-namespace MainForm
+namespace Forms
 {
     public partial class MainForm : Form
     {
@@ -22,7 +22,11 @@ namespace MainForm
 
         private void GetMultipleAnswer(object sender, EventArgs e)
         {
-            MessageBox.Show(this, "Sorry, this function is not released!", "We are sorry!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            using (GetListForm getListForm = new GetListForm())
+            {
+                if (getListForm.ShowDialog(this) == DialogResult.OK)
+                    GetAnswerDefault(getListForm.textBox.Lines);
+            }
         }
     }
 }

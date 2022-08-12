@@ -1,4 +1,4 @@
-﻿namespace MainForm
+﻿namespace Forms
 {
     partial class MainForm
     {

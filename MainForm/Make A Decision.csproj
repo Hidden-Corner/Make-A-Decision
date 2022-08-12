@@ -8,7 +8,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>res\dice.ico</ApplicationIcon>
     <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
-    <StartupObject>MainForm.Program</StartupObject>
+    <StartupObject>CoreSpace.Program</StartupObject>
     <Authors>Hidden Corner</Authors>
   </PropertyGroup>
 
